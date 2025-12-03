@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- This document is intentionally designed with flaws for a learning exercise. -->
+<html>
+  <head>
+    <title>Welcome to My Awesome Site!!</title>
+    <style>
+      /* CSS with intentional design flaws */
+      body {
+        background-color: #00ff00; /* Bright, jarring background color */
+        font-family: "Comic Sans MS", cursive, sans-serif; /* Not a professional font choice */
+        color: yellow; /* Poor contrast text color */
+        width: 960px; /* Fixed width, not responsive */
+        margin: 0 auto;
+      }
+      .header {
+        text-align: center;
+        padding: 20px;
+      }
+      .nav {
+        background-color: blue;
+        padding: 10px;
+        text-align: center;
+      }
+      .nav a {
+        color: white;
+        margin: 0 50px;
+        font-size: 24px;
+        font-family: "Papyrus", fantasy; /* Inconsistent and hard-to-read font */
+      }
+      .content {
+        padding: 15px;
+      }
+      .blinking-text {
+        animation: blinker 1s linear infinite; /* Annoying blinking effect */
+      }
+      @keyframes blinker {
+        50% {
+          opacity: 0;
+        }
+      }
+      #annoying-popup {
+        position: fixed;
+        top: 25%;
+        left: 25%;
+        width: 50%;
+        padding: 50px;
+        background: fuchsia;
+        border: 5px solid black;
+        z-index: 1000;
+        text-align: center;
+      }
+      table {
+        width: 100%;
+      }
+      td {
+        padding: 20px;
+        border: 2px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Autoplaying music - bad for user experience -->
+    <audio controls autoplay loop style="display: none">
+      <!-- A silent track is used here, but in a real scenario this would be music -->
+      <source
+        src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+    <div id="annoying-popup">
+      <h2>SUBSCRIBE TO OUR NEWSLETTER!</h2>
+      <p>
+        You won't regret it! Get all our amazing news straight to your inbox!
+      </p>
+      <button
+        onclick="document.getElementById('annoying-popup').style.display='none'"
+      >
+        CLOSE
+      </button>
+    </div>
+    <div class="header">
+      <marquee direction="right" scrollamount="10"
+        ><h1>WELCOME TO THE BEST WEBSITE EVER</h1></marquee
+      >
+      <img
+        src="https://placehold.co/800x150/E8117F/white?text=Our+Amazing+Logo"
+      />
+      <!-- Missing alt text -->
+    </div>
+    <div class="nav">
+      <!-- Non-descriptive links -->
+      <a href="#">Home</a>
+      <a href="page2.html">Click Here</a>
+      <!-- Broken link -->
+      <a href="#">Another Page</a>
+    </div>
+    <!-- Using a table for layout is an outdated and bad practice -->
+    <table>
+      <tr>
+        <td>
+          <h2 class="blinking-text">About Us!!!</h2>
+          <p>
+            Welcome to our corner of the internet. We are a company that does
+            things. We are very passionate about the things that we do and we
+            have been doing them for a long time. Our commitment to excellence
+            is second to none. We believe in synergy, innovation, and leveraging
+            our core competencies to provide value-added solutions. This is just
+            a block of text to fill up space so you can see how hard it is to
+            read with the current color scheme and font choices. It goes on and
+            on without any clear headings or breaks, making it very difficult
+            for a user to scan the content and find what they are looking for.
+            We hope you enjoy your time on our website.
+          </p>
+          <img
+            src="https://placehold.co/1200x800/cccccc/000000?text=Unoptimized+Large+Image"
+            width="300"
+          />
+          <!-- Image is huge but scaled down with HTML attributes -->
+        </td>
+        <td>
+          <h3>Our Services</h3>
+          <p>We offer a wide range of services to meet your needs.</p>
+          <a href="#">Click for more info</a>
+          <!-- Non-descriptive link text -->
+        </td>
+      </tr>
+    </table>
+
+    <div class="footer">
+      <p>Copyright 2010</p>
+      <!-- Outdated copyright information -->
+    </div>
+  </body>
+</html>
