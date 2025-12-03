@@ -6,9 +6,9 @@
     <style>
       /* CSS with intentional design flaws */
       body {
-        background-color: #00ff00; /* Bright, jarring background color */
-        font-family: "Comic Sans MS", cursive, sans-serif; /* Not a professional font choice */
-        color: yellow; /* Poor contrast text color */
+        background-color: rgb(234, 234, 234); /* Bright, jarring background color */
+        font-family: "ceribri body", cursive, sans-serif; /* Not a professional font choice */
+        color: rgb(0, 0, 0); /* Poor contrast text color */
         width: 960px; /* Fixed width, not responsive */
         margin: 0 auto;
       }
@@ -19,7 +19,7 @@
       }
 
       .nav {
-        background-color: blue;
+        background-color: rgb(0, 0, 0);
         padding: 10px;
         text-align: center;
       }
@@ -28,22 +28,13 @@
         color: white;
         margin: 0 50px;
         font-size: 24px;
-        font-family: "Papyrus", fantasy; /* Inconsistent and hard-to-read font */
+        font-family: "ceribri body", fantasy; /* Inconsistent and hard-to-read font */
       }
 
       .content {
         padding: 15px;
       }
 
-      .blinking-text {
-        animation: blinker 1s linear infinite; /* Annoying blinking effect */
-      }
-
-      @keyframes blinker {
-        50% {
-          opacity: 0;
-        }
-      }
 
       #annoying-popup {
         position: fixed;
@@ -51,7 +42,7 @@
         left: 25%;
         width: 50%;
         padding: 50px;
-        background: fuchsia;
+        background: rgb(235, 235, 235);
         border: 5px solid black;
         z-index: 1000;
         text-align: center;
@@ -91,7 +82,7 @@
     </div>
 
     <div class="header">
-      <marquee direction="right" scrollamount="10"
+      <marquee direction="left" scrollamount="10"
         ><h1>WELCOME TO THE BEST WEBSITE EVER</h1></marquee
       >
       <img
